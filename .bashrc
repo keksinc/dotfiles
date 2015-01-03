@@ -68,7 +68,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -110,8 +109,10 @@ alias opencon='netstat -lntp'
 alias claer='clear'
 alias clera='clear'
 alias cler='clear'
-
+alias cl='clear'
 
 export PATH=$PATH:/usr/local/apache-maven-3.2.1/bin
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 
+#source /home/sasa/frameworks/tinyos-main/tinyos.env
+alias phpvalall='find . -iname "*.php" -exec php -l {} \;'
