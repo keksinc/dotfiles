@@ -1,0 +1,10 @@
+alias ll='ls -l'
+alias la='ls -la'
+alias lt='ls -lthart'
+alias svi='sudo vim'
+alias opencon='netstat -lntp'
+alias claer='clear'
+alias clera='clear'
+alias cler='clear'
+alias cl='clear'
+export EDITOR=vim
