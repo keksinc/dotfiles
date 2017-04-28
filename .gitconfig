@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[include]
+	path = .git_userdata
+[user]
+# Please adapt and uncomment the following lines:
+name = hevelke
+#	email = Sascha@Saschas-MacBook-Pro.local
+[alias]
+lg = log --pretty=format:'%Cred%h %Cgreen%>(12)%ar %C(yellow)%an%x09%C(reset)%s'  --date=short -10
+la = log --pretty=format:'%Cred%h %Cgreen%>(12)%ad %C(yellow)%an%x09%C(reset)%s'  --date=short -10
+st = status
+com = commit
+che = checkout
