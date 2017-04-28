@@ -8,3 +8,7 @@ alias clera='clear'
 alias cler='clear'
 alias cl='clear'
 export EDITOR=vim
+if [ $UID -ne 0 ]; then
+    alias reboot='sudo reboot'
+    alias update='sudo apt-get upgrade'
+fi
