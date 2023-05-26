@@ -2,8 +2,39 @@
 [include]
 	path = .git_userdata
 [alias]
-lg = log --pretty=format:'%Cred%h %Cgreen%>(12)%ar %C(yellow)%an%x09%C(reset)%s'  --date=short -10
-la = log --pretty=format:'%Cred%h %Cgreen%>(12)%ad %C(yellow)%an%x09%C(reset)%s'  --date=short -10
-st = status
-com = commit
-che = checkout
+	lg = !git --no-pager log --pretty=format:'%Cred%h %Cgreen%<(17)%ar %C(yellow)%<(20)%an %C(reset)%s'  --date=short -10
+	lx = !git --no-pager log --pretty=format:'%Cred%h %C(yellow)%an%x09%C(reset)%s'  --date=short -10
+	la = !git --no-pager log --pretty=format:'%Cred%h %C(yellow)%an%x09%C(reset)%s'  --date=short -10
+	lx = !git --no-pager log --pretty=format:'%Cred%h|%C(yellow)%an|%C(reset)%s'  --date=short -10
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	st = status -sb
+	s = status 
+	com = commit
+	che = checkout
+	co = checkout
+	cob = checkout -b
+	del = branch -D
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	undo = reset HEAD~1 --mixed
+	done = !git push origin HEAD
+	donf = !git done -f
+	donef = !git done -f
+	save = !git add -A && git commit -m 'wip: commit save point'
+	amend = commit --amend -C HEAD
+	am = commit --amend -C HEAD
+	d = diff 
+	dv = difftool -t vimdiff -y
+	reco = rebase --continue
+	resk = rebase --skip
+	rehist = rebase --show-current-patch
+	a = add
+	follow = branch --set-upstream-to
+	au = add -u
+	sh=!git show $1 --name-only
+[user]
+	name = Sascha Hevelke
+[diff]
+	wsErrorHighlight = all
+[core]
+	autocrlf = true
