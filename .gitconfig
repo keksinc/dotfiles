@@ -38,3 +38,4 @@
 	wsErrorHighlight = all
 [core]
 	autocrlf = false
+	editor = vim
