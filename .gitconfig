@@ -37,4 +37,4 @@
 [diff]
 	wsErrorHighlight = all
 [core]
-	autocrlf = true
+	autocrlf = false
