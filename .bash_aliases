@@ -12,3 +12,6 @@ if [ $UID -ne 0 ]; then
     alias reboot='sudo reboot'
     alias update='sudo apt-get upgrade'
 fi
+
+alias d-c='docker compose'
+alias d-cu='docker compose up'
