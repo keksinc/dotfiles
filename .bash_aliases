@@ -1,4 +1,4 @@
-alias ll='ls -l'
+alias ll='ls -la'
 alias la='ls -la'
 alias lt='ls -lthart'
 alias svi='sudo vim'
